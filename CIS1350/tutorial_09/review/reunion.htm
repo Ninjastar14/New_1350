@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!--
+    Tutorial 9, Review
+    Your Name: Sean Wilt
+    Today's Date: July 17, 2016
+
+  -->
+
+  <script src="modernizr-2.js"></script>
+  <title>Sullivan Family</title>
+  
+  <style type="text/css">
+  
+header {
+  text-align: center;
+  margin: 6px;
+}  
+
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 20px;
+  padding: 6px;
+ }
+ 
+img {
+  vertical-align: middle;
+}
+  
+.title{
+  font-size: 3em;
+}
+
+left {
+  float: left;
+}
+
+#reunion {
+  width: 20%;
+  padding: 10px;
+  float: left;
+  clear: both;
+}
+
+#formcontainer {
+  width: 77%;  
+  float: right;
+}
+
+fieldset {
+  margin-bottom: 1em;
+  border: solid 2px #305704;
+  background-color: #befca7;
+}
+
+legend {
+  color: #305704;
+  padding: 0 10px;
+}
+
+.labelfloatleft label{
+  width: 100px;
+  margin-right: 15px;
+  color: black;
+  float: left;
+  text-align: right;
+}
+
+fieldset.group input {
+  display: inline;
+}
+
+input.button {
+  display: inline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<img src = "images/ireland.jpg" height = "150"/>
+<span class = "title">The Sullivan Family</span>
+</header>
+
+<article id="reunion">
+
+<h3>Sullivan Family Reunion</h3>
+<p>Let's start planning a family reunion for next summer! Please sign up if you can help. We're in the early stages of planning and we need all the help we can get!!!! </p>
+
+
+
+</article> <!-- end reunion -->
+
+<div id="formcontainer">
+<!-- enter the form code below -->
+<form id = "reunionhelp" action = " ">
+	<fieldset class = "labelfloatleft">
+		<legend> Personal Information</legend>
+			<input type = "text" name ="firstname" id="firstname" size ="30" />
+				<label for = "firstname">First Name</label>
+					<br/>
+			<input type = "text" name = "lastname" id ="lastname" value = "Sullivan" size = "30" />
+				<label for = "lastname"> Last Name</label>
+					<br />
+			<input type = "email" name = "emailaddress" id = "email" size = "50" placeholder = "name@anywhere.com" />
+				<label for = "email">Email Address</label>
+</fieldset>
+
+	<fieldset class = "group">
+		<legend> Relation </legend>
+			<input type = "radio" name ="sullivan" value = "iamsullivan" id="iamsullivan">
+			I am a Sullivan</input>
+			<input type = "radio" name = "sullivan" value = "spouse" id = "spouse">
+			I am the spouse of a Sullivan</input>		
+	</fieldset>
+	
+	<fieldset>
+		<legend> Tell us how you can help</legend>
+		<label for = "message">Message</label>
+			<textarea name = "message" id = "message" rows = "12" cols = "80"></textarea>
+	</fieldset>
+		<input type = "submit" value = "Send Information" class = "button" />
+		<input type = "reset"  value = "Reset" class = "button" />
+</form>
+  
+ 
+
+</div> <!-- end formcontainer -->
+<footer>
+<p>Patrick Sullivan &bull; 37 Merrion Square &bull; Dublin 2 &bull; Ireland</p>
+
+</footer> 
+
+
+
+</body>
+</html>
